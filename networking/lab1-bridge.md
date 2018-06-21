@@ -72,11 +72,11 @@ $ docker network inspect net1[
         "Options": {},
         "Labels": {}
     }
-    ```
+```
     
 ## Run a container on net2 now
     
- ```
+```
  $ docker run -d --net=net2 --name net2tool collabnixlabs/ubuntu-nettools:v1.0 sleepinfinity
 e7310afe1c925af9c3333060a75d8fb6e40095497f443a3eac5225fdf94131d4
 ```
@@ -181,6 +181,4 @@ PING 172.20.0.2 (172.20.0.2) 56(84) bytes of data.
 ^C
 --- 172.20.0.2 ping statistics ---
 2 packets transmitted, 0 received, 100% packet loss, time 1009ms
-
-
 ```
