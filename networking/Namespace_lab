@@ -1,4 +1,6 @@
 # Linux Network Namespace Introduction
+
+
 In this tutorial, we will learn what is Linux network namespace and how to use it.
 
 Docker uses many Linux namespace technologies for isolation, there are user namespace, process namespace, etc. For network isolation docker uses Linux network namespace technology, each docker container has its own network namespace, which means it has its own IP address, routing table, etc.
@@ -6,6 +8,7 @@ Docker uses many Linux namespace technologies for isolation, there are user name
 First, let’s see how to create and check a network namespace. The lab environment we used today is a docker host which is created by docker-machine tool on Amazon AWS.
 
 ## Create and List Network Namespace
+
 Use ip netns add <network namespace name> to create a network namespace, and ip netns list to list all network namepaces on the host.
     
 ```
@@ -15,6 +18,7 @@ test1
 ~$
     
 ```
+
 ## Delete Network Namespace
 Use ip netns delete <network namespace name> to delete a network namespace.
 
@@ -25,6 +29,7 @@ Use ip netns delete <network namespace name> to delete a network namespace.
 
 ```
 ## Execute CMD within Network Namespace
+
 How to check interfaces in a particular network namespace, we can use command ip netns exec <network namespace name> <command> like:
 
 ```
