@@ -95,3 +95,5 @@ Philips further explained CoreOS's position in this blog post:
 So far the primary benefits of the CRI for the Kubernetes community have been better code organization and improved code coverage in the Kubelet itself, resulting in a code base that's both higher quality and more thoroughly tested than ever before. For nearly all deployments, however, we expect the Kubernetes community will continue to use Docker Engine in the near term.
 
 During the discussion in the press meeting, Patel likewise said that "we don't want Kubernetes users to know what the runtime is". Indeed, as long as it works, users shouldn't care. Besides, OpenShift, Tectonic, and other platforms abstract runtime decisions away and pick their own best default matching their users' requirements. The question of which runtime Kubernetes chooses by default is therefore not really a concern for those developers, who prefer working on building consensus on standard specifications. In a world of conflict, seeing those developers working together cordially was definitely a breath of fresh air.
+
+Reference: https://lwn.net/Articles/741897/
