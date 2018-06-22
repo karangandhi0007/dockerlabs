@@ -33,6 +33,16 @@ $ docker info --format '{{json .Plugins.Network}}'
 ["bridge","host","ipvlan","macvlan","null","overlay"]
 ```
 
+## Running Ubuntu container on default bridge network
+
+```
+$docker run -dit --name demo-bridge ubuntu sleep infinity
+```
+
+```
+$ docker inspect --format='{{json .NetworkSettings.Networks.net1.IPAddress}}' demo-bridge
+"172.19.0.3"
+```
 
 ## How to create a bridge network called "net1"
 
