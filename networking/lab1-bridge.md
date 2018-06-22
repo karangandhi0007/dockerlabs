@@ -1,5 +1,31 @@
 # How to create a Bridge network
 
+
+## Verifying Docker version
+
+```
+$ docker version
+Client:
+ Version:      18.03.1-ce
+ API version:  1.37
+ Go version:   go1.9.2
+ Git commit:   9ee9f40
+ Built:        Thu Apr 26 07:12:25 2018
+ OS/Arch:      linux/amd64
+ Experimental: false
+ Orchestrator: swarm
+
+Server:
+ Engine:
+  Version:      18.03.1-ce  API version:  1.37 (minimum version 1.12)
+  Go version:   go1.9.5
+  Git commit:   9ee9f40
+  Built:        Thu Apr 26 07:23:03 2018
+  OS/Arch:      linux/amd64
+  Experimental: true
+  ```
+
+
 ## Listing the supported network driver
 
 ```
