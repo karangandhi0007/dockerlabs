@@ -1,5 +1,7 @@
 # How to create a Bridge network
 
+<a href="https://asciinema.org/a/obR9hnd1LuejH4Gtrq9Rpaegx" target="_blank"><img src="https://asciinema.org/a/D7Sy9ouLPWc3aWa5RVPKuMOaK.png" /></a>
+
 
 ## Verifying Docker version
 
