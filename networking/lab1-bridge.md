@@ -1,5 +1,13 @@
 # How to create a Bridge network
 
+## Listing the supported network driver
+
+```
+$ docker info --format '{{json .Plugins.Network}}'
+["bridge","host","ipvlan","macvlan","null","overlay"]
+```
+
+
 ## How to create a bridge network called "net1"
 
 ```
